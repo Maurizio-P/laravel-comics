@@ -1,0 +1,23 @@
+//nav
+.navbar-nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+
+    li{
+        margin-right: 15px;
+
+        a{
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bold;
+            color: black;
+            
+            &.focus{
+                color: rgb(82, 82, 255);
+                border-bottom: rgb(82, 82, 255);
+            }
+        }
+    }
+}
