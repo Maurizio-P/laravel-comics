@@ -13,11 +13,17 @@
             text-transform: uppercase;
             font-weight: bold;
             color: black;
-            
-            &.focus{
-                color: rgb(82, 82, 255);
-                border-bottom: rgb(82, 82, 255);
-            }
+            transition: .3s;
+            // &.focus{
+            //     color: rgb(82, 82, 255);
+            //     border-bottom: rgb(82, 82, 255);
+            // }
+
+        }
+        .active{
+            color: #5252ff;
+            border-bottom: 2px solid #5252ff;
+            margin-bottom: 20px;
         }
     }
 }

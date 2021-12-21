@@ -14,11 +14,13 @@
   text-transform: uppercase;
   font-weight: bold;
   color: black;
+  transition: 0.3s;
 }
 
-.navbar-nav li a.focus {
+.navbar-nav li .active {
   color: #5252ff;
-  border-bottom: #5252ff;
+  border-bottom: 2px solid #5252ff;
+  margin-bottom: 20px;
 }
 
 .jumbotron {
@@ -37,7 +39,6 @@
 
 .bg-color {
   background-color: #1c1c1c;
-  overflow: hidden;
 }
 
 .bg-color h1 {
@@ -92,6 +93,7 @@
 
 .card-comics {
   width: calc(16.6666666667% - 20px);
+  text-decoration: none;
 }
 
 .card-comics:hover .cover-comics .overlay {
@@ -125,10 +127,6 @@
   align-items: center;
   color: white;
   background-color: rgba(0, 0, 0, 0.4);
-}
-
-.card-comics .cover-comics .overlay h4 {
-  max-width: 170px;
 }
 
 .card-comics h5 {
@@ -270,5 +268,147 @@ footer .bg-color-grey section .link-social .social img {
 
 .col-7 {
   width: 58.3333333333%;
+}
+
+.bg-blue {
+  background-color: #0282f9;
+  height: 50px;
+  position: relative;
+}
+
+.bg-blue .img-container {
+  position: absolute;
+  top: -250px;
+}
+
+.bg-blue .img-container img {
+  height: 100%;
+}
+
+.white-section {
+  padding: 30px 0;
+}
+
+.white-section .row .col-8 .title-comic {
+  margin: 15px 0;
+}
+
+.white-section .row .col-8 .cart {
+  background-color: green;
+  padding: 10px 5px;
+  margin-bottom: 15px;
+}
+
+.white-section .row .col-8 .cart .col-8 {
+  border-right: 1px solid gray;
+}
+
+.white-section .row .col-8 .cart .col-8 .container-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.white-section .row .col-8 .cart .col-8 .container-price .price {
+  display: flex;
+}
+
+.white-section .row .col-8 .cart .col-8 .container-price .price h6 {
+  margin-right: 5px;
+  color: lightgrey;
+}
+
+.white-section .row .col-8 .cart .col-8 .container-price .available h6 {
+  text-transform: uppercase;
+  color: lightgrey;
+}
+
+.white-section .row .col-8 .cart .col-4 {
+  display: flex;
+  justify-content: center;
+}
+
+.white-section .row .col-8 .cart .col-4 h6 {
+  color: white;
+}
+
+.bg-grey {
+  background-color: #f6f6f6;
+  padding: 30px 0;
+}
+
+.bg-grey .row .col-8 .artist {
+  display: flex;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding: 15px 0;
+}
+
+.bg-grey .row .col-8 .artist h5 {
+  width: 40%;
+}
+
+.bg-grey .row .col-8 .artist a {
+  text-decoration: none;
+}
+
+.bg-grey .row .col-8 .written {
+  display: flex;
+  border-bottom: 1px solid black;
+  padding: 15px 0;
+}
+
+.bg-grey .row .col-8 .written h5 {
+  width: 40%;
+}
+
+.bg-grey .row .col-8 .written a {
+  text-decoration: none;
+}
+
+.bg-grey .row .col-4 .series {
+  display: flex;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding: 15px 0;
+}
+
+.bg-grey .row .col-4 .series > h5 {
+  width: 40%;
+}
+
+.bg-grey .row .col-4 .series .series-comic a {
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.bg-grey .row .col-4 .prices {
+  display: flex;
+  border-bottom: 1px solid black;
+  padding: 15px 0;
+}
+
+.bg-grey .row .col-4 .prices > h5 {
+  width: 40%;
+}
+
+.bg-grey .row .col-4 .prices .price-comic a {
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.bg-grey .row .col-4 .date {
+  display: flex;
+  border-bottom: 1px solid black;
+  padding: 15px 0;
+}
+
+.bg-grey .row .col-4 .date > h5 {
+  width: 40%;
+}
+
+.bg-grey .row .col-4 .date .date-comic a {
+  text-transform: uppercase;
+  text-decoration: none;
 }
 

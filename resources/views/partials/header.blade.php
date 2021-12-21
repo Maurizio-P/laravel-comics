@@ -6,7 +6,7 @@
                 ],
                 [
                     "linkText" => "Comics",
-                    "href" => "/comics"
+                    "href" => "comics"
                 ],
                 [
                     "linkText" => "Movies",
@@ -40,7 +40,9 @@
                     "linkText" => "Shop",
                     "href" => "#"
                 ],
-            ]
+];
+
+$urlName = Request::route()->getName();
 @endphp
 
 <header>
@@ -53,10 +55,18 @@
             <ul class="navbar-nav">
                 @foreach ($linkNav as $link)
                 <li class="nav-item">
-                    <a href="{{ $link['href'] }}" class="nav-link">{{$link['linkText']}}</a>
+                    @php
+                       $myPage = $link["href"];
+                       $active = strpos($urlName, $myPage) === 0;
+                    @endphp
+                    <a href="{{ $link['href'] }}" class="nav-link {{ $active ? 'active' : "" }}">{{$link['linkText']}}</a>
                 </li>
                 @endforeach
             </ul>
         </div>
     </nav>
+
+        <div class="jumbotron">
+            <img src="{{ asset('img/jumbotron.jpg') }}" alt="">
+        </div>
 </header>

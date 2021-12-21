@@ -19,6 +19,27 @@ Route::get('/', function () {
 
 Route::get('/comics', function(){
     $comicsArray = config('comics');
+    $comicsId = [];
+    foreach ($comicsArray as $key => $comic) {
+        $comic["id"] = $key;
+        $comicsId[] = $comic;
+    }
 
-    return view('pages.comics', ["comics" => $comicsArray]);
+    return view('pages.comics', ["comics" => $comicsId]);
 })->name("comics");
+
+Route::get('comics.{id?}', function($id){
+    $comicsArray = config('comics');
+    $comicsId = [];
+    foreach ($comicsArray as $key => $comic) {
+        $comic["id"] = $key;
+        $comicsId[] = $comic;
+    }
+
+    if ($id >= 0 && $id < count($comicsId)) {
+        $singleComic = $comicsId[$id];
+        return view('pages.comic', ["comic" => $singleComic]);
+    }else{
+        abort('404');
+    }
+})->name("comic");

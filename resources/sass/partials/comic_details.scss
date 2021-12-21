@@ -1,0 +1,164 @@
+.bg-blue{
+    background-color: #0282f9;
+    height: 50px;
+    position: relative;
+
+    .img-container{
+        position: absolute;
+        top: -250px;
+        img{
+            height: 100%;
+        }
+    }
+}
+
+.white-section{
+    padding: ($paddingY * 2) 0;
+
+    .row{
+
+        .col-8{
+            
+            .title-comic{
+                margin: $paddingY 0 ;
+            }
+
+            .cart{
+                background-color: green;
+                padding: 10px 5px;
+                margin-bottom: $paddingY;
+
+                .col-8{
+                    border-right: 1px solid gray;
+                   .container-price{
+                       display: flex;
+                       justify-content: space-between;
+                       align-items: center;
+
+                       .price{
+                        display: flex;
+                           h6{
+                               margin-right: 5px;
+                               color: lightgrey;
+                            }
+                        }
+                        
+                        .available{
+     
+                         h6 {
+                             text-transform: uppercase;
+                             color: lightgrey;
+                         }
+                        }
+                   }
+                }
+
+                .col-4{
+                    display: flex;
+                    justify-content: center;
+
+                    h6 {
+                        color: white;
+                    }
+                }
+            }
+            .description{
+
+            }
+        }
+    }
+}
+
+.bg-grey{
+    background-color: #f6f6f6;
+    padding: ($paddingY * 2) 0;
+
+
+    .row{
+
+        .col-8{
+
+            .artist{
+                display: flex;
+                border-top: 1px solid black;
+                border-bottom: 1px solid black;
+                padding: $paddingY 0;
+                h5{
+                    width: 40%;
+                }
+
+                a{
+                    text-decoration: none;
+                }
+            }
+
+            .written{
+                display: flex;
+                border-bottom: 1px solid black;
+                padding: $paddingY 0;
+                h5{
+                    width: 40%;
+                }
+                a{
+                    text-decoration: none;
+                }
+            }
+        }
+
+        .col-4{
+
+            .series{
+                display: flex;
+                border-top: 1px solid black;
+                border-bottom: 1px solid black;
+                padding: $paddingY 0;
+
+                >h5{
+                    width: 40%;
+                }
+
+                .series-comic{
+                    a{
+                        text-transform: uppercase;
+                        text-decoration: none;
+                    }
+                }
+            }
+
+            .prices{
+                display: flex;
+                border-bottom: 1px solid black;
+                padding: $paddingY 0;
+
+                >h5{
+                    width: 40%;
+                }
+                .price-comic{
+                    a{
+                        text-transform: uppercase;
+                        text-decoration: none;
+                    }
+                }
+            }
+
+            .date{
+                display: flex;
+                border-bottom: 1px solid black;
+                padding: $paddingY 0;
+
+                >h5{
+                    width: 40%;
+                }
+
+                .date-comic{
+
+
+                    a{
+                        text-transform: uppercase;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}
